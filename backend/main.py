@@ -67,7 +67,6 @@ def is_dag(nodes: List[NodeData], edges: List[EdgeData]) -> bool:
     # If we visited all nodes, there are no cycles → it's a DAG
     return visited_count == len(node_ids)
 
-
 @app.get('/')
 def read_root():
     return {'Ping': 'Pong'}
